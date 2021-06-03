@@ -10,15 +10,18 @@ package com.mariamura.tasks;
 import java.util.*;
 
 public class Module1_task1 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter two integer arrays");
         String s1 = sc.nextLine();
         String s2 = sc.nextLine();
         sc.close();
 
-        String[] s1_1 = s1.replaceAll("[\\[\\],]", " ").split(" ");
-        String[] s2_1 = s2.replaceAll("[\\[\\],]", " ").split(" ");
+        System.out.println(equalsArray(s1, s2));
+    }
+    public static List<Integer> equalsArray(String a, String b){
+        String[] s1_1 = a.replaceAll("[\\[\\],]", " ").split(" ");
+        String[] s2_1 = b.replaceAll("[\\[\\],]", " ").split(" ");
 
         HashSet<Integer> s1_2 = new HashSet<>(s1_1.length);
         HashSet<Integer> s2_2  = new HashSet<>(s2_1.length);
@@ -44,10 +47,8 @@ public class Module1_task1 {
 
         s1_2.retainAll(s2_2);
         List<Integer> result = new ArrayList<>(s1_2);
-
         Collections.sort(result);
-        System.out.println(result);
-
+        return result;
     }
 
 }
