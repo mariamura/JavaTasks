@@ -1,4 +1,4 @@
-package com.mariamura.tasks;
+package com.mariamura.tasks.part1;
 
 /* Program check if input text contains all closed brackets.
 * "[({})]" - true

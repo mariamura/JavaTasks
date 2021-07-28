@@ -1,4 +1,4 @@
-package com.mariamura.tasks;
+package com.mariamura.tasks.part1;
 
 import java.util.concurrent.Semaphore;
 

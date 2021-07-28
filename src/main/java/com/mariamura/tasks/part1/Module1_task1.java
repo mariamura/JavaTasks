@@ -1,4 +1,4 @@
-package com.mariamura.tasks;
+package com.mariamura.tasks.part1;
 
 /*
 * Algorithm, that take two arrays and get one sorted array with numbers, that contains in both input arrays.
