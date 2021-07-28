@@ -1,6 +1,6 @@
 package com.mariamura.tasks.patterns.FactoryMethod;
 
-public class FactoryMethodDemo {
+public class Main {
     public static void main(String[] args) {
         PetFactory petFactory = createPet("cat");
         Pet pet = petFactory.createPet("Liam");
