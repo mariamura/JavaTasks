@@ -1,4 +1,5 @@
 package com.mariamura.tasks.patterns.AbstractFactory;
 
-public class Main {
+public interface Dog {
+    void wantWalk();
 }
